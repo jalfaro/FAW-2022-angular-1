@@ -1,0 +1,6 @@
+<div class="titulo">Saludo</div>
+<b>Ingres nombre : </b> <input type="text" [(ngModel)]="nombre"><br/>
+<button (click)="saludar()">Saludar</button>
+<div *ngIf="mostrarSaludo">
+    Hola {{nombre}}
+</div>
